@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leonardofernandescosta/ProjetoIFOOD/issues"
   },
-  "homepage": "https://github.com/leonardofernandescosta/ProjetoIFOOD#readme"
+  "homepage": "https://github.com/leonardofernandescosta/ProjetoIFOOD#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
