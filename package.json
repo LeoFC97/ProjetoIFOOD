@@ -1,0 +1,19 @@
+{
+  "name": "projetoifood",
+  "version": "1.0.0",
+  "description": "Api para o aplicativo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardofernandescosta/ProjetoIFOOD.git"
+  },
+  "author": "Leonardo Fernandes Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardofernandescosta/ProjetoIFOOD/issues"
+  },
+  "homepage": "https://github.com/leonardofernandescosta/ProjetoIFOOD#readme"
+}
