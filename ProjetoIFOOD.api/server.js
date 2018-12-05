@@ -1,5 +1,6 @@
-const express = require('express'); //fazendo o "import" do express
+const express = require('express'); //fazendo o import do express
 const app /*variavel para manter o "servidor" */ = express(); //chamando a funcao do express
+const bodyParser = require('body-parser');//fazendo o import do bodyParser
 
 /*
 Server baseado no padrão CRUD:
@@ -9,25 +10,41 @@ U - Update
 D - Deleate
 */
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({exetended: false}));
+
+
+let pessoas = [];
 
 app.get('/', (req, res) => {  //R
-    res.status(200).send("Olá Mundo");
+    res.status(200).send(pessoas);
     console.log('get');
 });
 
-app.post('/', (res, res) => { //C
-    res.status(201).send("Criado");
+app.post('/', (req, res) => { //C
+    pessoas.push(req.body);
+    res.status(201).send(req.body);
     console.log('post');
 
 });
 
-app.put('/', (res, res) => { //U
-    res.status(202).send("Atualizado");
+app.put('/:id', (req, res) => { //U
+    
+    let pessoaEncontrada = pessoas.filter(pes=>{return pes.id== req.params.id});
+    pessoaEncontrada = req.body;
+    res.status(202).send(req.body);
     console.log('put');
 });
 
-app.delete('/', (res, res) => { //D
-    res.status(204).send("Excluido");
+app.delete('/:id', (req, res) => { //D
+    for (let index = 0; index < pessoas.length; index++) {
+        const pessoa= pessoa[index];
+        if(pessoa.id==req.param.id)
+        {
+            pessoas.slice(index,1);
+        }
+    }
+    res.status(204).send("Pessoa Deletada com sucesso");
     console.log('put');
 });
 
