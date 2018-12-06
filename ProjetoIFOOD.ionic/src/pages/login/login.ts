@@ -23,7 +23,7 @@ export class LoginPage {
   }
   abrirCategoria():void
   {
-    this.navCtrl.push('CategoriaPage')
+    this.navCtrl.push('CategoriaPage');
   }
 
 }
