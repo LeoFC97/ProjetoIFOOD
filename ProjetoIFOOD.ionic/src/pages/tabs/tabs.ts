@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, assertPlatform } from '@angular/core';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 
 /**
  * Generated class for the TabsPage page.
@@ -15,11 +15,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabsPage');
+  }
+  selecionarCategoria(event):void
+  {
+    console.log('tab',event);
+    console.log(event.tabTitle);
+
+    if(event.tabTitle =='Categorias')
+    {
+      console.log("Entrou no if");
+      this.app.getRootNav().setRoot('CategoriaPage');
+    }
   }
 
 }
