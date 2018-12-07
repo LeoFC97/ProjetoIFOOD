@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SpinnerProvider } from '../providers/spinner/spinner';
 import { AlertProvider } from '../providers/alert/alert';
+import { HttpProvider } from '../providers/http/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AlertProvider } from '../providers/alert/alert';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SpinnerProvider,
-    AlertProvider
+    AlertProvider,
+    HttpProvider
   ]
 })
 export class AppModule {}
