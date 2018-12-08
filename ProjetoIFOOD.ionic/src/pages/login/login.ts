@@ -22,8 +22,10 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   
-  abrirCategoria():void {
+  logar():void {
     this.navCtrl.setRoot('CategoriaPage');
   }
-
+  abrirCadastro():void {
+    this.navCtrl.setRoot('CadastroPage');
+  }
 }

@@ -1,11 +1,10 @@
-<ion-content no-padding>
-  <div class="red">
+<ion-content no-padding class="fundo-img">
     <div class="logo">
       <img src="/assets/imgs/icon-branco.png" alt="">
       <span>Ifood</span>
     </div>
 
-    <ion-list no-lines>
+    <ion-list no-lines class="list-transparent">
       <ion-item>
         <ion-input type="text" placeholder="E-mail"></ion-input>
       </ion-item>
@@ -16,12 +15,12 @@
 
     <ion-grid>
       <ion-row>
-        <button ion-button color="secondary" block round (click)="abrirCategoria()">
+        <button ion-button color="secondary" block round (click)="logar()">
           Efetuar Login
         </button>
       </ion-row>
       <ion-row>
-        <button ion-button block outline round color="secondary">
+        <button ion-button color="secondary" block round (click)="abrirCadastro()">
           Cadastrar-se
         </button>
       </ion-row>
@@ -34,5 +33,4 @@
         </button>
       </ion-row>
     </ion-grid>
-  </div>
 </ion-content>
