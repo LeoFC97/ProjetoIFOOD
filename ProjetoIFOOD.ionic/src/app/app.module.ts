@@ -9,6 +9,7 @@ import { LoginPage } from '../pages/login/login';
 import { SpinnerProvider } from '../providers/spinner/spinner';
 import { AlertProvider } from '../providers/alert/alert';
 import { HttpProvider } from '../providers/http/http';
+import { CatogoriaProvider } from '../providers/catogoria/catogoria';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpProvider } from '../providers/http/http';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SpinnerProvider,
     AlertProvider,
-    HttpProvider
+    HttpProvider,
+    CatogoriaProvider
   ]
 })
 export class AppModule {}
