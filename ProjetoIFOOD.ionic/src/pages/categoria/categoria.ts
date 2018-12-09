@@ -26,9 +26,13 @@ export class CategoriaPage {
   {
     this.navCtrl.push('CategoriaChurrascoPage');
   }
-  abrirJaponesa():void
+  abrirMassa():void
   {
-    this.navCtrl.push('CategoriaJaponesaPage');
+    this.navCtrl.push('CategoriaMassaPage');
+  }
+  abrirSaudavel():void
+  {
+    this.navCtrl.push('CategoriaSaudavelPage');
   }
 
 }
