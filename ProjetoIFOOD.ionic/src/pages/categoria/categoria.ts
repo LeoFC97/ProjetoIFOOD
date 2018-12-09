@@ -24,7 +24,11 @@ export class CategoriaPage {
 
   abrirChurrasco():void
   {
-    this.navCtrl.setRoot('TabsPage');
+    this.navCtrl.push('CategoriaChurrascoPage');
+  }
+  abrirJaponesa():void
+  {
+    this.navCtrl.push('CategoriaJaponesaPage');
   }
 
 }

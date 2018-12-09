@@ -12,19 +12,28 @@
 
 </ion-header>
 
+<ion-content padding class="fundo-img" >
 
-<ion-content padding >
-  <button class="categoriaDePrato" ion-button block round (click)="abrirChurrasco()" >
-    Abrir Churrasco
-  </button>
-  <button class="categoriaDePrato" ion-button block round (click)="abrirJaponesa()" >
-    Abrir Japonesa
-  </button>
-  <button class="categoriaDePrato" ion-button block round (click)="abrirMassa()" >
-    Abrir Massa
-  </button>
-  <button class="categoriaDePrato" ion-button block round (click)="abrirSaudavel()" >
-    Abrir Saudavel
-  </button>
-
+<ion-grid >
+  <ion-row >
+      <button class="categoriaDePrato" ion-button block round (click)="abrirChurrasco()" >
+          Abrir Churrasco
+        </button>
+  </ion-row>
+  <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirJaponesa()" >
+          Abrir Japonesa
+        </button>
+  </ion-row>
+  <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirMassa()" >
+          Abrir Massa
+        </button>
+  </ion-row>
+  <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirSaudavel()" >
+          Abrir Saudavel
+        </button>
+  </ion-row>
+</ion-grid>
 </ion-content>
