@@ -4,9 +4,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let produto of produtos" (click)="SelecionarItem(produto)">
+<ion-content padding class="fundo-img">
+  <ion-list ion-no-lines class="list-transparent">
+    <button ion-item *ngFor="let produto of produtos" (click)="SelecionarItem(produto)" >
       {{ produto }}
     </button>
   </ion-list>
