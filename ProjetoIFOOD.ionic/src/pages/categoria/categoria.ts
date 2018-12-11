@@ -22,21 +22,19 @@ export class CategoriaPage {
     console.log('ionViewDidLoad CategoriaPage');
   }
 
-  abrirChurrasco():void
-  {
+  abrirChurrasco(): void {
     this.navCtrl.push('CategoriaChurrascoPage');
   }
-  abrirMassa():void
-  {
+  abrirMassa(): void {
     this.navCtrl.push('CategoriaMassaPage');
   }
-  abrirJaponesa():void
-  {
+  abrirJaponesa(): void {
     this.navCtrl.push('CategoriaJaponesaPage');
   }
-  abrirSaudavel():void
-  {
+  abrirSaudavel(): void {
     this.navCtrl.push('CategoriaSaudavelPage');
   }
-
+  abrirPedido(): void {
+    this.navCtrl.push('PedidoPage');
+  }
 }
