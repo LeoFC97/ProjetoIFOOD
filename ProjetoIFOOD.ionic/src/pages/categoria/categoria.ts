@@ -30,6 +30,10 @@ export class CategoriaPage {
   {
     this.navCtrl.push('CategoriaMassaPage');
   }
+  abrirJaponesa():void
+  {
+    this.navCtrl.push('CategoriaJaponesaPage');
+  }
   abrirSaudavel():void
   {
     this.navCtrl.push('CategoriaSaudavelPage');
