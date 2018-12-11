@@ -6,34 +6,39 @@
 -->
 <ion-header>
 
-  <ion-navbar color= secondary>
-    <ion-title>categoria</ion-title>
+  <ion-navbar color=secondary>
+    <ion-title>Tipos de Comida</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content padding class="fundo-img" >
+<ion-content padding class="fundo-img">
 
-<ion-grid >
-  <ion-row >
-      <button class="categoriaDePrato" ion-button block round (click)="abrirChurrasco()" >
-          Churrascaria
-        </button>
-  </ion-row>
-  <ion-row>
-      <button class="categoriaDePrato"ion-button block round (click)="abrirJaponesa()" >
+  <ion-grid>
+    <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirChurrasco()">
+        Churrascaria
+      </button>
+    </ion-row>
+    <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirJaponesa()">
         Comida Japonesa
-        </button>
-  </ion-row>
-  <ion-row>
-      <button class="categoriaDePrato" ion-button block round (click)="abrirMassa()" >
-          Comida Italiana
-        </button>
-  </ion-row>
-  <ion-row>
-      <button class="categoriaDePrato" ion-button block round (click)="abrirSaudavel()" >
-          Salada
-        </button>
-  </ion-row>
-</ion-grid>
+      </button>
+    </ion-row>
+    <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirMassa()">
+        Comida Italiana
+      </button>
+    </ion-row>
+    <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirSaudavel()">
+        Salada
+      </button>
+    </ion-row>
+    <ion-row>
+      <button class="categoriaDePrato" ion-button block round (click)="abrirPedido()">
+        Meu Pedido
+      </button>
+    </ion-row>
+  </ion-grid>
 </ion-content>
