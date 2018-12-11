@@ -28,9 +28,9 @@ export class CadastroPage {
 
   confirmarCadastro():void {
     this.Alert.toast('Cadastro realizado com sucesso','bottom');
-    this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.setRoot('LoginPage');
   }
   cancelar():void {
-    this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.setRoot('LoginPage');
   }
 }

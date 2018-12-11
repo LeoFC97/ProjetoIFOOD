@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertProvider } from './../../providers/alert/alert';
+
 
 /**
  * Generated class for the RecantoProdutosPage page.
@@ -15,11 +17,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RecantoProdutosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,  private Alert: AlertProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecantoProdutosPage');
   }
+  produtos = [
+    'Espeto Simples          R$: 9.99',
+    'Espetinho Duplo         R$: 12.90',
+    'Quentinha simples       R$: 15.00',
+    'Almoço executivo        R$: 22.00',
+    'Linguiça com farofa     R$: 8.00',
+  ];
 
+  SelecionarItem(produto: string) {
+    this.Alert.toast('Produto adicionado com sucesso','bottom');
+    console.log("Item Selecionado:", produto);
+  }
 }
