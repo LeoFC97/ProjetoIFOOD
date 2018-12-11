@@ -21,5 +21,13 @@ export class CategoriaChurrascoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoriaChurrascoPage');
   }
+  Recanto()
+  {
+    this.navCtrl.push("RecantoProdutosPage");
+  }
+  Mocelin()
+  {
+    this.navCtrl.push("MocelinProdutosPage");
+  }
 
 }
