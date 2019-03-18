@@ -1,4 +1,4 @@
-import { SQLiteObject } from '@ionic-native/sqlite/ngx';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 import { DatabaseProvider } from './../database/database';
 import { Injectable } from '@angular/core';
 

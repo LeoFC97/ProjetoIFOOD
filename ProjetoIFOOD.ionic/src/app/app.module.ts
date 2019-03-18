@@ -10,10 +10,10 @@ import { SpinnerProvider } from '../providers/spinner/spinner';
 import { AlertProvider } from '../providers/alert/alert';
 import { HttpProvider } from '../providers/http/http';
 import { CatogoriaProvider } from '../providers/catogoria/catogoria';
-import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 import { DatabaseProvider } from '../providers/database/database';
 import { ClientesProvider } from '../providers/clientes/clientes';
 import { ProdutosProvider } from '../providers/produtos/produtos';
+import { SQLite } from '@ionic-native/sqlite';
 
 
 @NgModule({
