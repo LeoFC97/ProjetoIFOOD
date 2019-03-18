@@ -29,7 +29,7 @@ export class MyApp {
   }
   private abrirPaginaInicial(splashScreen: SplashScreen)
   {
-    splashScreen.hide;
+    splashScreen.hide();
     this.rootPage=LoginPage;//agora sim chama a home page
 
   }
