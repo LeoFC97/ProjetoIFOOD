@@ -11,6 +11,9 @@ import { AlertProvider } from '../providers/alert/alert';
 import { HttpProvider } from '../providers/http/http';
 import { CatogoriaProvider } from '../providers/catogoria/catogoria';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
+import { DatabaseProvider } from '../providers/database/database';
+import { ClientesProvider } from '../providers/clientes/clientes';
+import { ProdutosProvider } from '../providers/produtos/produtos';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
     HttpProvider,
     CatogoriaProvider,
     SQLite,
-    {provide: LOCALE_ID, useValue:'PT-BR'}
+    {provide: LOCALE_ID, useValue:'PT-BR'},
+    DatabaseProvider,
+    ClientesProvider,
+    ProdutosProvider
   ]
 })
 export class AppModule {}
