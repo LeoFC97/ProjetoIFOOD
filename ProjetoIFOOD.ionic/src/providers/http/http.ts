@@ -1,6 +1,6 @@
-import { AlertProvider } from './../alert/alert';
+/*import { AlertProvider } from './../alert/alert';
 import { SpinnerProvider } from './../spinner/spinner';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';*/
 import { Injectable } from '@angular/core';
 
 /*
@@ -12,7 +12,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class HttpProvider {
 
-  constructor(private http: HttpClient, private spinnerSrv: SpinnerProvider, private alertSrv: AlertProvider) {
+  constructor(/*private http: HttpClient, private spinnerSrv: SpinnerProvider, private alertSrv: AlertProvider*/) {
     console.log('Hello HttpProvider Provider');
   }
 

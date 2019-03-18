@@ -1,6 +1,7 @@
-import { SQLite,SQLiteObject } from '@ionic-native/sqlite/ngx';
-import { HttpClient } from '@angular/common/http';
+import { SQLite } from '@ionic-native/sqlite/ngx';
+import { SQLiteObject } from '@ionic-native/sqlite';
 import { Injectable } from '@angular/core';
+
 
 @Injectable()
 export class DatabaseProvider {
@@ -12,7 +13,7 @@ export class DatabaseProvider {
   public getDB()
   {
     return this.sqlite.create({
-      name: 'products.db',
+      name: 'ifood.db',
       location: 'default'
     });
 
@@ -35,9 +36,5 @@ export class DatabaseProvider {
     ])
     .then(()=> console.log('Tabelas criadas com sucesso'))
     .catch(e =>console.error('Erro ao criar as tabelas', e));
-
   }
-  
-
-
 }

@@ -90,4 +90,18 @@ export class Cliente
   rua:string;
   numero:string;
   complemento:string;
+  constructor(id?: number, nome?:string, telefone?: string,email?: string,senha?: string,cidade?: string,estado?: string,bairro?: string,rua?: string,numero?: string,complemento?: string)
+  {
+    this.id=id;
+    this.nome=nome;
+    this.telefone=telefone;
+    this.email=email;
+    this.senha=senha;
+    this.estado=estado;
+    this.cidade=cidade;
+    this.bairro=bairro;
+    this.rua=rua;
+    this.numero=numero;
+    this.complemento=complemento;
+  }
 }
