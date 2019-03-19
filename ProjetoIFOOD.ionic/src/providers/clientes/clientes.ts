@@ -15,7 +15,7 @@ export class ClientesProvider {
     console.log('Hello ClientesProvider Provider');
   }
 
-  public insert(cliente: Cliente)
+  public insertNovoCliente(cliente: Cliente)
   {
     return this.dbProvider.getDB()
     .then((db:SQLiteObject)=>
