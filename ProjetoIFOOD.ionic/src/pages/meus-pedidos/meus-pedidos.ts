@@ -32,7 +32,7 @@ export class Carrinho
 
   constructor()
   {
-    
+
   }
   public adicionarNoCarrinho(prod?:string)
   {
