@@ -1,3 +1,4 @@
+import { Carrinho,MeusPedidosPage } from './../meus-pedidos/meus-pedidos';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertProvider } from './../../providers/alert/alert';
@@ -17,6 +18,8 @@ import { AlertProvider } from './../../providers/alert/alert';
 })
 export class RecantoProdutosPage {
 
+    public RecantoItensSelecionado = new Carrinho();
+
   constructor(public navCtrl: NavController, public navParams: NavParams,  private Alert: AlertProvider) {
   }
 
@@ -34,5 +37,7 @@ export class RecantoProdutosPage {
   SelecionarItem(produto: string) {
     this.Alert.toast('Produto adicionado com sucesso','bottom');
     console.log("Item Selecionado:", produto);
+    this.RecantoItensSelecionado.adicionarNoCarrinho(produto);
+    this.RecantoItensSelecionado.mostrarCarrinho();
   }
 }

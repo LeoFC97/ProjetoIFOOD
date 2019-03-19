@@ -21,5 +21,30 @@ export class MeusPedidosPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MeusPedidosPage');
   }
+  
+
+}
+
+
+export class Carrinho
+{
+  public itens= new Array<string>();
+
+  constructor()
+  {
+    
+  }
+  public adicionarNoCarrinho(prod?:string)
+  {
+    this.itens.push(prod);
+  }
+  public mostrarCarrinho()
+  {
+    console.log("Carrinho atual:")
+    for (let i=0;i<this.itens.length;i++)
+    {
+      console.log(this.itens);
+    }
+  }
 
 }

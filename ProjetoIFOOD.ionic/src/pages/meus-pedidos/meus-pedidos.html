@@ -13,6 +13,8 @@
 </ion-header>
 
 
-<ion-content padding>
-
-</ion-content>
+<ion-content padding class="fundo-img">
+    <ion-item-group *ngFor="let item of itens">
+      <ion-item>{{ item }}</ion-item>
+    </ion-item-group>
+  </ion-content>
