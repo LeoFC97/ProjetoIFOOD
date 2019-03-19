@@ -3,7 +3,7 @@
     <name>ProjetoIFOOD</name>
     <description>App criado para minha graduação em SI, matéria de IONIC3.</description>
     <author email="leonardo.fc2@outlook.com" href="https://github.com/leonardofernandescosta">Contato</author>
-    <content original-src="index.html" src="http://192.168.25.53:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
